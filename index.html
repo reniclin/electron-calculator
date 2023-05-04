@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+</head>
+
+<body>
+    <div class="grid_container">
+        <div class="row">
+            <div class="display">0</div>
+        </div>
+        <div class="row">
+            <div class="button button_special button_ac" id="ac">AC</div>
+            <div class="button button_special" id="negative">±</div>
+            <div class="button button_special" id="percentage">%</div>
+            <div class="button button_calc" id ="divide">÷</div>
+        </div>
+        <div class="row">
+            <div class="button button_num">7</div>
+            <div class="button button_num">8</div>
+            <div class="button button_num">9</div>
+            <div class="button button_calc" id="multiply">×</div>
+        </div>
+        <div class="row">
+            <div class="button button_num">4</div>
+            <div class="button button_num">5</div>
+            <div class="button button_num">6</div>
+            <div class="button button_calc" id="subtract">−</div>
+        </div>
+        <div class="row">
+            <div class="button button_num">1</div>
+            <div class="button button_num">2</div>
+            <div class="button button_num">3</div>
+            <div class="button button_calc" id="add">+</div>
+        </div>
+        <div class="row">
+            <div class="button button_num button_zero">0</div>
+            <div class="button button_num">.</div>
+            <div class="button button_calc" id="equals">=</div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

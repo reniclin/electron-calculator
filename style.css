@@ -1,0 +1,89 @@
+:root {
+    --window-width: 232;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    box-sizing: content-box;
+    font-family: Helvetica;
+    font-weight: 100;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    user-select: none;
+}
+
+.grid_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    height: calc(100vh / 6 - 0.5px);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.button_special,
+.button_calc,
+.button_num,
+.display {
+    display: flex;
+    width: calc(25% - 0.5px);
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+}
+
+.display {
+    background-color: #544F4E;
+    width: 100%;
+    justify-content: end !important;
+    padding: 0px 10px 0px 10px;
+    text-size-adjust: auto;
+    font-size: 32px;
+}
+
+.button_calc {
+    background-color: #FFA31A;
+}
+
+.button_calc:active:hover {
+    background-color: #D38E34;
+}
+
+.button_special {
+    background-color: #65605F;
+}
+
+.button_special:active:hover {
+    background-color: #7E7A7A;
+}
+
+.button_num {
+    background-color: #7E7A7A;
+}
+
+.button_num:active:hover {
+    background-color: #C8C2C2;
+}
+
+.button_zero {
+    width: calc(50% - 0.5px) !important;
+}
+
+.button_ac {
+    font-size: 17px;
+}
