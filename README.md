@@ -1,5 +1,5 @@
 # electron-calculator
-> Implement macOS style calculator using Electron, JavaScript, HTML and CSS.
+> A macOS-style calculator sample app built with Electron, JavaScript, HTML, and CSS.
 
 ### Run
     npm install

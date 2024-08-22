@@ -111,17 +111,19 @@ buttons.forEach(button => {
                 if (isPrevStepCalc) {
                     isPrevStepCalc = false;
                     prevBigNum = new Big(display.innerText);
-                    display.innerText = '';
+                    display.innerText = '0';
                 }
 
-                if (target.innerText === '.' && !display.innerText.includes('.')) {
+                if (target.innerText === '.' && display.innerText.includes('.')) {
                     break;
                 }
+
                 if (display.innerText === '0' && target.innerText !== '.') {
                     display.innerText = target.innerText;
                 } else {
                     display.innerText += target.innerText;
                 }
+
                 break;
             }
         }
